@@ -29,7 +29,7 @@ class App extends Component {
       document.addEventListener('keydown', (event) => {
           if (event.key === 'ArrowRight' && this.state.renderBall) {
               this.setState((prevState) => {
-                  const newPosition = prevState.posi + 10;
+                  const newPosition = prevState.posi + 5;
                   return {
                       posi: newPosition,
                       ballPosition: { left: `${newPosition}px` }
